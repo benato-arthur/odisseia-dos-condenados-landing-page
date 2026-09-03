@@ -67,7 +67,7 @@ header{
             list-style: none;
             color: #d8c49a;
             font-family: 'Jacques Francois', serif;
-            font-size: 16px;
+            font-size: 0.9vw;
             background-color: rgba(0, 0, 0, 0.5);
             padding: 0 10px;
             border-radius: 10px;
@@ -232,4 +232,36 @@ main hr{
         }
     }
    
+}
+
+.o-que-te-espera{
+    background-image: url(../img/background-o-que-te-espera.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #E8DCC1;
+    cursor: default;
+    h2.titulo-oque-te-espera{
+        margin: 8vh 0 0 0;
+        font-family: 'Jacques Francois', serif;
+        font-size: 52px;
+        z-index: 2;
+        text-align: center;
+    }
+    .divisao-de-blocos{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            z-index: 2;
+            img.divisao-icon{
+                width: 35px;
+                height: auto;
+            }
+            hr{
+                display: block;
+                width: 14%;
+                border: 1px solid #790707;
+            }
+        }
 }
