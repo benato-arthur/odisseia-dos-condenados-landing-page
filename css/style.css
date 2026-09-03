@@ -93,7 +93,7 @@ main hr{
 }
 
 .primeira-pagina{
-    background-image: url(/img/background-secao-um.webp);
+    background-image: url(./img/background-secao-um.webp);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -181,7 +181,7 @@ main hr{
 }
 
 .sobre-a-aventura{
-    background-image: url(/img/background-sobre-a-aventura.webp);
+    background-image: url(./img/background-sobre-a-aventura.webp);
     background-size: cover;
     background-position: center;
     height: 100vh;
