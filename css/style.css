@@ -265,77 +265,47 @@ main hr{
         }
     }
     .cards{
-        margin: 0 0 0 0;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        list-style: none;
-        font-family: 'Almendra', serif;
-        gap: 100px;
-        padding: 40px;
-        li{
-            font-size: 1.8vw;
-            width: 240px;
-        }
-        .card-swords{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            text-align: center;
-            max-width: 250px;
-            img{
-                width: 10vw;
-                margin-bottom: 20px;
-            }
-        }
-        .card-cannon{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            text-align: center;
-            max-width: 250px;
-            img{
-                width: 13vw;
-                margin-bottom: 20px;
-            }
-        }
-        .card-rum-bottle{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            text-align: center;
-            max-width: 250px;
-            img{
-                width: 6vw;
-                margin-bottom: 20px;
-            }
-        }
-        .card-wheel{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            text-align: center;
-            max-width: 250px;
-            img{
-                width: 10vw;
-                margin-bottom: 20px;
-            }
-        }
-        .card-crowned-skull{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            text-align: center;
-            max-width: 250px;
-            img{
-                width: 9vw;
-                margin-bottom: 20px;
-            }
-        }
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-flow: column;
+    grid-template-rows: auto auto 1fr;
+    align-items: start;
+    gap: 20px 40px;
+    margin: 0;
+    padding: 40px 5%;
+    list-style: none;
+    font-family: 'Almendra', serif;
+
+    & > div{
+        display: contents;
     }
+
+    img{
+        max-height: 110px;
+        width: auto;
+        align-self: end;
+        justify-self: center;
+        margin: 0;
+    }
+
+    li{
+        align-self: start;
+        text-align: center;
+        font-size: 1.8vw;
+        min-height: 2.4em;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    p{
+        align-self: start;
+        text-align: center;
+        width: 100%;
+        max-width: none;
+        font-size: 1vw;
+        line-height: 1.4;
+        margin: 0;
+    }
+}
 }
