@@ -80,7 +80,6 @@ header{
         }
     }
 }
-
     
 section{
     width: 100%;
@@ -151,6 +150,7 @@ main hr{
         width: 500px;
         height: 80px;
         background-color: #790707;
+        border-radius: 45px;
         box-shadow: 0 0 24px rgba(94, 14, 14, 0.45);
         z-index: 2;
         margin: 20px 0 0 4vw;
@@ -191,7 +191,7 @@ main hr{
     background-image: url(../img/background-sobre-a-aventura.webp);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 85vh;
     color: #E8DCC1;
     cursor: default;
     display: flex;
@@ -201,7 +201,7 @@ main hr{
         background-color: rgba(0, 0, 0, 0.5);
         height: 100%;
         h2.titulo-sobre-a-aventura{
-            margin-top: 8vh;
+            margin-top: 5vh;
             margin-left: 25vw;
             font-family: 'Jacques Francois', serif;
             font-size: 52px;
@@ -245,11 +245,11 @@ main hr{
     background-image: url(../img/background-o-que-te-espera.webp);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 80vh;
     color: #E8DCC1;
     cursor: default;
     h2.titulo-conheca-alguns-rostos{
-        margin: 12vh 0 0 0;
+        margin: 9vh 0 0 0;
         font-family: 'Jacques Francois', serif;
         font-size: 52px;
         z-index: 2;
@@ -268,7 +268,7 @@ main hr{
         }
         hr{
             display: block;
-            width: 20%;
+            width: 12%;
             border: 1px solid #790707;
         }
     }
@@ -277,7 +277,7 @@ main hr{
         align-items: center;
         justify-content: center;
         gap: 1vw;
-        margin-top: 5vw;
+        margin-top: 2vw;
         font-family: 'Almendra';
         font-size: 30px;
         text-align: center;
@@ -289,5 +289,85 @@ main hr{
             background-color: #14120c;
             border-radius: 10px;
         }
+    }
+}
+
+.como-jogar{
+    background-image: url(../img/background-envio-ao-discord.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #E8DCC1;
+    cursor: default;
+    h2{
+        margin: 25vh auto 0;
+        font-family: 'Jacques Francois', serif;
+        font-size: 52px;
+        text-align: center;
+        z-index: 2;
+        align-items: center;
+        justify-content: center;
+    }
+    .divisao-de-blocos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        z-index: 2;
+        margin-top: 10px;
+        img.divisao-icon{
+            width: 35px;
+            height: auto;
+        }
+        hr{
+            display: block;
+            width: 11%;
+            border: 1px solid #790707;
+        }
+    }
+    p{
+        text-align: center;
+        font-family: 'Almendra', serif;
+        font-size: 40px;
+        margin-top: 7vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .botao-discord{
+        width: 500px;
+        height: 80px;
+        background-color: #790707;
+        border-radius: 10px;
+        box-shadow: 0 0 24px rgba(94, 14, 14, 0.45);
+        z-index: 2;
+        margin: 100px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        a{
+            text-decoration: none;
+            color: #E8DCC1;
+            font-family: 'Almendra', serif;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            line-height: 80px;
+            width: 100%;
+            gap: 10px;
+            img{
+                width: 35px;    
+                height: 35px;
+                justify-content: center;
+                align-self: center;
+            }
+        }
+    }
+    .botao-discord:hover{
+        background-color: #610000;
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
     }
 }
