@@ -249,19 +249,93 @@ main hr{
         text-align: center;
     }
     .divisao-de-blocos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        z-index: 2;
+        img.divisao-icon{
+            width: 35px;
+            height: auto;
+        }
+        hr{
+            display: block;
+            width: 14%;
+            border: 1px solid #790707;
+        }
+    }
+    .cards{
+        margin: 0 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        list-style: none;
+        font-family: 'Almendra', serif;
+        gap: 100px;
+        padding: 40px;
+        li{
+            font-size: 1.8vw;
+            width: 240px;
+        }
+        .card-swords{
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            gap: 10px;
-            z-index: 2;
-            img.divisao-icon{
-                width: 35px;
-                height: auto;
-            }
-            hr{
-                display: block;
-                width: 14%;
-                border: 1px solid #790707;
+            justify-content: flex-start;
+            text-align: center;
+            max-width: 250px;
+            img{
+                width: 10vw;
+                margin-bottom: 20px;
             }
         }
+        .card-cannon{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: center;
+            max-width: 250px;
+            img{
+                width: 13vw;
+                margin-bottom: 20px;
+            }
+        }
+        .card-rum-bottle{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: center;
+            max-width: 250px;
+            img{
+                width: 6vw;
+                margin-bottom: 20px;
+            }
+        }
+        .card-wheel{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: center;
+            max-width: 250px;
+            img{
+                width: 10vw;
+                margin-bottom: 20px;
+            }
+        }
+        .card-crowned-skull{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: center;
+            max-width: 250px;
+            img{
+                width: 9vw;
+                margin-bottom: 20px;
+            }
+        }
+    }
 }
