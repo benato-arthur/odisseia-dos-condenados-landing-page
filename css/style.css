@@ -115,7 +115,7 @@ main hr{
     h2.titulo-primeira-pagina{
         margin-top: 30vh;
         margin-left: 4vw;
-        font-family: 'Jacques Francois', serif;
+        font-family: 'Almendra', serif;
         font-size: 40px;
         z-index: 2;
         span{
@@ -157,7 +157,6 @@ main hr{
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 10px;
         cursor: pointer;
         a{
             text-decoration: none;
@@ -165,12 +164,20 @@ main hr{
             font-family: 'Almendra', serif;
             font-size: 24px;
             font-weight: bold;
-            display: block;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            line-height: 80px;
+            width: 100%;
+            gap: 10px;
+            img{
+                width: 35px;    
+                height: 35px;
+                justify-content: center;
+                align-self: center;
+            }
         }
-        img{
-            width: 35px;    
-            height: auto;
-        }
+        
     }
     .botao-primeira-pagina:hover{
         background-color: #610000;
@@ -291,7 +298,7 @@ main hr{
     li{
         align-self: start;
         text-align: center;
-        font-size: 1.8vw;
+        font-size: 2vw;
         min-height: 2.4em;
         display: flex;
         align-items: flex-start;
@@ -303,7 +310,7 @@ main hr{
         text-align: center;
         width: 100%;
         max-width: none;
-        font-size: 1vw;
+        font-size: 1.8vw;
         line-height: 1.4;
         margin: 0;
     }
