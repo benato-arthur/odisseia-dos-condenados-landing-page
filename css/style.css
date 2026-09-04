@@ -383,7 +383,7 @@ main hr{
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 800px){
     header{
         display: flex;
         align-items: center;
