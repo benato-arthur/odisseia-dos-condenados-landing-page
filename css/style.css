@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+}
+
 ul li {
     padding: 0 15px;
     border-radius: 10px;
