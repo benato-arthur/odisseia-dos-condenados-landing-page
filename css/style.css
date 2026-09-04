@@ -71,7 +71,7 @@ header{
             list-style: none;
             color: #d8c49a;
             font-family: 'Jacques Francois', serif;
-            font-size: 0.9vw;
+            font-size: 20px;
             background-color: rgba(0, 0, 0, 0.5);
             padding: 0 10px;
             border-radius: 10px;
@@ -151,8 +151,8 @@ main hr{
     }
     
     .botao-primeira-pagina{
-        width: 500px;
-        height: 80px;
+        width: 26.0417vw;
+        height: 4.1667vw;
         background-color: #790707;
         border-radius: 45px;
         box-shadow: 0 0 24px rgba(94, 14, 14, 0.45);
@@ -195,7 +195,8 @@ main hr{
     background-image: url(../img/background-sobre-a-aventura.webp);
     background-size: cover;
     background-position: center;
-    height: 85vh;
+    min-height: 85vh;
+    height: auto;
     color: #E8DCC1;
     cursor: default;
     display: flex;
@@ -204,16 +205,22 @@ main hr{
     .card-sobre-a-aventura{
         background-color: rgba(0, 0, 0, 0.5);
         height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 20px;
+        box-sizing: border-box;
         h2.titulo-sobre-a-aventura{
             margin-top: 5vh;
-            margin-left: 25vw;
+            margin-left: 0;
             font-family: 'Jacques Francois', serif;
             font-size: 52px;
             z-index: 2;
             justify-content: center;
         }
         .divisao-de-blocos{
-            margin: 0 0 0 25vw;
+            margin: 20px 0 0 0;
+            width: 100%;
             display: flex;
             align-items: center;
             gap: 10px;
@@ -224,17 +231,17 @@ main hr{
             }
             hr{
                 display: block;
-                width: 19.5%;
+                width: 15%;
                 border: 1px solid #790707;
             }
         }
         
         p{
             font-family: 'Almendra', serif;
-            font-size: 40px;
+            font-size: 24px;
             z-index: 2;
-            margin: 40px 0 0 25vw;
-            width: auto;
+            margin: 30px 0 0 0;
+            width: 100%;
         }
 
         div.quarto-paragrafo{
@@ -338,8 +345,8 @@ main hr{
         flex-direction: column;
     }
     .botao-discord{
-        width: 500px;
-        height: 80px;
+        width: 26.0417vw    ;
+        height: 4.1667vw;
         background-color: #790707;
         border-radius: 10px;
         box-shadow: 0 0 24px rgba(94, 14, 14, 0.45);
@@ -374,4 +381,129 @@ main hr{
         transform: scale(1.1);
         transition: all 0.3s ease-in-out;
     }
+}
+
+@media (max-width: 768px){
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 15px;
+        div{
+            img{
+                width: 50px;
+            }
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content:flex-end;
+            li{
+                font-size: 7px;
+                max-width: 90px;
+                gap: 10px;
+            }
+        }
+    }
+    .primeira-pagina{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+        .divisao-de-blocos{
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            hr{
+                width: 40%;
+            }
+        }
+        .botao-primeira-pagina{
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            margin: 6vh auto;
+            width: 400px;
+            height: 80px;
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    .sobre-a-aventura{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .divisao-de-blocos{
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .conheca-alguns-rostos {
+        height: auto; 
+        min-height: 80vh;
+        padding: 40px 10px;
+        box-sizing: border-box;
+
+        h2.titulo-conheca-alguns-rostos {
+            font-size: 32px; 
+            margin: 5vh 0 0 0;
+        }
+
+        .divisao-de-blocos hr {
+            width: 20%; 
+        }
+
+        .personagens {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 30px 10px;  
+            margin-top: 30px;
+            padding: 0 15px; 
+            font-size: 12px; 
+
+            
+            div {    
+                width: calc(33.33% - 12px); 
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            img {
+                width: 100%; 
+                max-width: 110px;
+                height: auto;
+                border-radius: 10px;
+            }
+
+            p {
+                width: 100%;
+                max-width: 110px;
+                margin-top: 8px;
+                padding: 6px 4px; 
+                box-sizing: border-box;
+                word-wrap: break-word; 
+            }
+        }
+    }
+    .como-jogar{
+        .botao-discord{
+            width: 350px;
+            height: 80px;
+        }
+    }
+
+}
+
+@media (max-width: 375px){
+
 }
