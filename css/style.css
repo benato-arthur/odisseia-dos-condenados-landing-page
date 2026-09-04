@@ -399,7 +399,7 @@ main hr{
             align-items: center;
             justify-content:flex-end;
             li{
-                font-size: 7px;
+                font-size: 8px;
                 max-width: 90px;
                 gap: 10px;
             }
@@ -413,6 +413,7 @@ main hr{
         text-align: center;
         background-size: cover;
         background-position: center;
+        margin: 0;
         .divisao-de-blocos{
             align-items: center;
             display: flex;
